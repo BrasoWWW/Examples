@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Righteous', cursive;
+}
+.cover{
+  z-index: 1;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+.bg-image{
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 0;
+  filter: blur(2px);
+}
+.bg-image:hover{
+  background-size: 130% 130%;
+}
+.text{
+  height: 100vh;
+  width: 100%;
+  /*background-image: url('../images/bg-text.jpg');
+  background-size: 150% 150%;
+  background-position: center;*/
+
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 250px;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 2;
+  text-shadow: 0 0 0px rgba(134, 134, 134, 0.7);
+}
+
+.text h1{
+  margin: 0;
+  padding: 0;
+
+}
+.text h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+
+}
+footer{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(107, 107, 107,0.4);
+  text-align: center;
+  color: white;
+  z-index: 2;
+
+}
+h5,h6{
+  margin-top: 10px;
+  padding: none;
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+@media (max-width: 768px){
+  .text h2{
+    font-size: 35px;
+  }
+  .text h1{
+    font-size: 30px;
+  }
+}
